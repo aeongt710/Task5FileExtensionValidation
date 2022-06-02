@@ -64,7 +64,7 @@ namespace Task5FileExtensionValidation.Models.ValidationAttributes
 
             }
 
-            return new ValidationResult("Value is null");
+            return ValidationResult.Success;
         }
         public FileExtensAttribute()
         {

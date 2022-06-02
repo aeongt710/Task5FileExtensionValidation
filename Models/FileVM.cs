@@ -8,13 +8,13 @@ namespace Task5FileExtensionValidation.Models
     {
         [Required]
         [FileExtens(".txt", ".docx")]
-        [Display(Name = "Single File Upload")]
+        [Display(Name = "Single File Upload (txt,docx)")]
         public IFormFile SingleFile { get; set; }
 
 
         [Required]
         [FileExtens(".txt", ".docx")]
-        [Display(Name = "Multiple File Upload")]
+        [Display(Name = "Multiple File Upload (txt,docx)")]
         public IFormFile[] MultipleFiles { get; set; }
     }
 }

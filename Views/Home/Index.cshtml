@@ -1,0 +1,27 @@
+﻿@model Task5FileExtensionValidation.Models.FileVM
+
+@{
+    ViewData["Title"] = "FileVM";
+}
+
+<h1>FileVM</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="SingleFile" class="control-label"></label>
+                <input asp-for="SingleFile" class="" />
+                <span asp-validation-for="SingleFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MultipleFiles" class="control-label"></label>
+                <input asp-for="MultipleFiles" class="" />
+                <span asp-validation-for="MultipleFiles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Upload" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
